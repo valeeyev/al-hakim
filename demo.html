@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Select Example</title>
+  </head>
+  <body>
+    <form>
+      <label for="continent">Select a Continent:</label>
+      <select id="continent" name="continent">
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="america">America</option>
+      </select>
+
+      <label for="country">Select a Country:</label>
+      <select id="country" name="country">
+        <!-- Options for Asia -->
+        <optgroup label="Asia">
+          <option value="china">China</option>
+          <option value="india">India</option>
+          <option value="japan">Japan</option>
+        </optgroup>
+
+        <!-- Options for Europe -->
+        <optgroup label="Europe">
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="italy">Italy</option>
+        </optgroup>
+
+        <!-- Options for America -->
+        <optgroup label="America">
+          <option value="usa">United States</option>
+          <option value="canada">Canada</option>
+          <option value="brazil">Brazil</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
